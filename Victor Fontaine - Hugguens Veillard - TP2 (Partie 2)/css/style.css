@@ -1,0 +1,423 @@
+/* ================================================= */
+/* 1. STYLES GLOBAUX & TYPOGRAPHIE                   */
+/* ================================================= */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #35354C;
+}
+
+/* Conteneur principal qui limite la largeur du site */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Titres et liens textuels */
+h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+h2 {
+    color: #EBE7E7;
+}
+
+h3 a {
+    text-decoration: none;
+    color: purple;
+}
+
+.note {
+    font-size: x-large;
+}
+
+.etoiles {
+    color: #f4b400;
+    font-size: 40px;
+}
+
+
+/* ================================================= */
+/* 2. STRUCTURE PRINCIPALE (HEADER, FOOTER, LAYOUT)  */
+/* ================================================= */
+
+header {
+    background-color: #65808E;
+    padding: 20px;
+    border: 2px solid black;
+    margin-bottom: 2px;
+}
+
+.flexheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #65808E;
+    padding: 7px;
+    text-align: left;
+    border: 2px solid black;
+    font-size: larger;
+    margin-top: 2px;
+}
+
+.flexfooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteneurarticle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+
+/* ================================================= */
+/* 3. NAVIGATION & FIL D'ARIANE                     */
+/* ================================================= */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+nav li a {
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    color: purple;
+    margin-right: 30px;
+}
+
+nav li a:hover {
+    color: rgb(164, 0, 164);
+}
+
+.pageselectionne {
+    padding-bottom: 5px;
+    border-bottom: 2px black solid;
+}
+
+.filariane {
+    display: flex;
+    gap: 5px;
+    padding: 0;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+}
+
+.filariane li {
+    list-style: none;
+}
+
+.filariane a {
+    text-decoration: none;
+    padding-left: 0px;
+    color: purple;
+}
+
+
+/* ================================================= */
+/* 4. COMPOSANTS RÉUTILISABLES (TABLEAUX, BOUTONS)   */
+/* ================================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    background-color: #35354C;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+td {
+    background-color: #4d4d65;
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+.bouton {
+    background-color: black;
+    padding: 10px;
+    font-size: large;
+}
+
+.bouton a {
+    text-decoration: none;
+    color: #EBE7E7;
+}
+
+
+.separateur {
+    width: 100%;
+    height: 2px;
+    background-color: #58588F;
+    margin: 15px 0;
+}
+
+
+/* ================================================= */
+/* 5. SECTIONS DE CONTENU (ARTICLES & NOUVELLES)     */
+/* ================================================= */
+
+.sectionnouvelles {
+    margin: 50px;
+    border: 2px solid black;
+    overflow: auto;
+    background-color: #58588F;
+    line-height: 1.5rem;
+}
+
+.sectionsousnouvelles {
+    width: 65%;
+    background-color: #65808E;
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+.sectionsousproduit {
+    width: 65%;
+    background-color: #65808E;
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+.flexsousproduit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.barrelaterale {
+    width: 28%;
+    background-color: #65808E;
+    padding: 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.barrelaterale ul {
+    font-size: x-large;
+}
+
+.barrelaterale a {
+    text-decoration: none;
+}
+
+.barrelaterale a:hover {
+    color: rgb(164, 0, 164);
+}
+
+.barrelaterale li {
+    margin-bottom: 15px;
+}
+
+
+/* ================================================= */
+/* 6. IMAGES                                         */
+/* ================================================= */
+
+.imgproduits {
+    padding-top: 10px;
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.imgsousproduits {
+    max-width: 100%;
+    width: 90%;
+    display: block;
+    margin: 0 auto 20px auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+.imagenouvelles {
+    float: left;
+    overflow: hidden;
+    margin-right: 50px;
+}
+
+.imagesousnouvelles {
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 25px;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* ================================================= */
+/* 7. PAGES SPÉCIFIQUES (INDEX, CATÉGORIES, CONTACT) */
+/* ================================================= */
+
+.section1 {
+    padding: 200px;
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 2px;
+    color: #EBE7E7;
+    background-image: url("../img/Banniereindex.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section2 {
+    padding: 80px;
+    text-align: left;
+    font-size: x-large;
+    background-color: #58588F;
+    line-height: 1.5rem;
+}
+
+.sectionproduit {
+    margin: 50px;
+    margin-top: 40px;
+    width: 300px;
+    padding: 10px 10px 30px 10px;
+    border: 2px black solid;
+    background-color: #58588F;
+    color: black;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.sectionproduitcategorie1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    color: white;
+}
+
+.flexproduits {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.sectionnouscontacter {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 80px 40px;
+    color: #EBE7E7;
+    background-image: url("../img/Banniereindex.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    line-height: 2rem;
+}
+
+.flex-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.colonne-contact {
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* ================================================= */
+/* 8. MOTS CLÉES ET COMMENTAIRES               */
+/* ================================================= */
+
+.motsclee {
+    margin: 0;
+    padding: 0;
+}
+
+.motsclee li {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #9B999C;
+    color: black;
+    border-radius: 10px;
+}
+
+.commentaires {
+    margin: 0;
+    padding: 0;
+}
+
+.commentaires li {
+    display: block;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #9B999C;
+    color: black;
+}
+
+.flex-presentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.texte-presentation {
+    width: 60%;
+}
+
+.video-presentation {
+    width: 35%;
+}
+
+.video-presentation video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; 
+    border: 2px solid black;
+}
+
+
+.conteneur-map {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.conteneur-map h3 {
+    color: #EBE7E7;
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+.conteneur-map iframe {
+    border-radius: 15px;
+    max-width: 100%;
+}
